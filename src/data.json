@@ -1,17 +1,12 @@
 [
     {
-        "id": "profile__img",
-        "url": "./profile.png",
-        "btnText": "Annette Black"
-    },
-    {
         "id": "twitter",
-        "url": "https://training.zuri.team/",
+        "url": "https://twitter.com/XquisiteDreamer",
         "btnText": "Twitter"
     },
     {
         "id": "slack",
-        "url": "https://training.zuri.team/",
+        "url": "https://hng9.slack.com",
         "hidden": true
     },
     {
@@ -21,7 +16,7 @@
     },
     {
         "id": "books",
-        "url": "http://books.zuri.team",
+        "url": "https://books.zuri.team",
         "btnText": "Zuri Books",
         "btnSubText": "Books on Design and Coding"
     },
