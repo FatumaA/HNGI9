@@ -1,0 +1,46 @@
+[
+    {
+        "id": "profile__img",
+        "url": "./profile.png",
+        "btnText": "Annette Black"
+    },
+    {
+        "id": "twitter",
+        "url": "https://training.zuri.team/",
+        "btnText": "Twitter"
+    },
+    {
+        "id": "slack",
+        "url": "https://training.zuri.team/",
+        "hidden": true
+    },
+    {
+        "id": "btn__zuri",
+        "url": "https://training.zuri.team/",
+        "btnText": "Zuri Team"
+    },
+    {
+        "id": "books",
+        "url": "http://books.zuri.team",
+        "btnText": "Zuri Books",
+        "btnSubText": "Books on Design and Coding"
+    },
+    {
+        "id": "book__python",
+        "url": "https://books.zuri.team/python-for-beginners",
+        "btnText": "Python Book",
+        "btnSubText": "The ultimate beginners' guide to Python"
+    },
+    {
+        "id": "pitch",
+        "url": "https://background.zuri.team",
+        "btnText": "Verified Coders",
+        "btnSubText": "Looking to hire coders? Take the guess work out of it with our background checks"
+    },
+    {
+        "id": "book__design",
+        "url": "https://training.zuri.team/",
+        "btnText": "Free Design Book",
+        "btnSubText": "Get this Zuri certified Design book for free"
+    }
+]
