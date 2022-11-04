@@ -10,7 +10,10 @@ const SocialSection = () => {
 			/>
 			<FaGithub
 				style={{ cursor: "pointer" }}
-				onClick={() => (window.location.href = "https://github.com/FatumaA")}
+				onClick={() =>
+					(window.location.href =
+						"https://github.com/FatumaA/hngi9/tree/Task-2---Add-Contact-to-LinkTree-clone")
+				}
 			/>
 		</div>
 	);
