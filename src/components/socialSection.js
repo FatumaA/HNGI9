@@ -3,9 +3,9 @@ import { FaSlack, FaGithub } from "react-icons/fa";
 
 const SocialSection = () => {
 	return (
-		<div class="iconWrapper">
+		<div className="iconWrapper">
 			<FaSlack
-				style={{ "margin-right": 10, cursor: "pointer" }}
+				style={{ cursor: "pointer" }}
 				onClick={() => (window.location.href = "https://hng9.slack.com")}
 			/>
 			<FaGithub
