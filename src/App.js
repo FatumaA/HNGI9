@@ -1,9 +1,9 @@
 import "./App.css";
 import btnData from "./data.json";
-import AnchorBtn from "./components/anchorBtn";
-import Profile from "./components/profile";
-import Footer from "./components/footer";
-import SocialSection from "./components/socialSection";
+import AnchorBtn from "./components/AnchorBtn";
+import Profile from "./components/Profile";
+import Footer from "./components/Footer";
+import SocialSection from "./components/SocialSection";
 
 function App() {
 	const profInfo = {
