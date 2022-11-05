@@ -194,6 +194,7 @@ label{
 }
 #checkbox{
     margin: 0 10px 0 0;
+    cursor: pointer;
 }
 .flexContainer1{
     display: flex;
