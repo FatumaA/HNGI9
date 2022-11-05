@@ -7,43 +7,32 @@ const Contact = () => {
 		lastName: "",
 		email: "",
 		message: "",
-		checkbox: false,
 	});
 
-	const [formErrors, setFormErrors] = useState({});
-
-	const isValid =
-		formVals.firstName.length > 0 &&
-		formVals.email.trim().length > 0 &&
-		formVals.message.length > 0 &&
-		formVals.checkbox.valueOf() === true;
-	console.log("validity", isValid);
-
-	let checkIfValid;
+	const [formChecked, setFormChecked] = useState(false);
 
 	const name = "Fatuma A";
 
 	const handleChange = (e) => {
 		const value = e.target.value;
 		const checked = e.target.checked;
-		// if (
-		// 	formVals.firstName.length > 0 &&
-		// 	formVals.email.trim().length > 0 &&
-		// 	formVals.message.length > 0 &&
-		// 	formVals.checkbox.valueOf() === true
-		// ) {
-		// 	checkIfValid = false;
-		// }
 		setFormVals({
 			...formVals,
 			[e.target.name]: value,
-			checkbox: checked,
+			// checkbox: checked,
 		});
+		// setFormChecked(checked);
 	};
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
+		const formInfo = {
+			...formVals,
+			formChecked,
+		};
+		alert(JSON.stringify(formInfo));
 		alert("Message sent");
+		setFormChecked(false);
 		e.target.reset();
 	};
 
@@ -119,18 +108,13 @@ const Contact = () => {
 								name="checkbox"
 								type="checkbox"
 								id="checkbox"
-								onChange={handleChange}
+								onChange={(e) => setFormChecked(e.target.checked)}
 							/>
 							<label htmlFor="checkbox">
 								You agree to providing your data to {name} who may contact you.
 							</label>
-							{/* <div className="hint">
-								{formVals.checkbox.valueOf() === false
-									? "Please check the checkbox"
-									: ""}
-							</div> */}
 						</div>
-						<button type="submit" id="btn__submit" disabled={!isValid}>
+						<button type="submit" id="btn__submit">
 							Send message
 						</button>
 					</div>
