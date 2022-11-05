@@ -10,19 +10,15 @@ const Contact = () => {
 	});
 
 	const [formChecked, setFormChecked] = useState(false);
-	// const isCheckboxFocussed = document.getElementById("checkbox").autofocus();
 
 	const name = "Fatuma A";
 
 	const handleChange = (e) => {
 		const value = e.target.value;
-		const checked = e.target.checked;
 		setFormVals({
 			...formVals,
 			[e.target.name]: value,
-			// checkbox: checked,
 		});
-		// setFormChecked(checked);
 	};
 
 	const handleSubmit = (e) => {
