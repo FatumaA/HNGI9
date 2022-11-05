@@ -1,27 +1,15 @@
 import "./App.css";
-import btnData from "./data.json";
-import AnchorBtn from "./components/AnchorBtn";
-import Profile from "./components/Profile";
-import Footer from "./components/Footer";
-import SocialSection from "./components/SocialSection";
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import Contact from "./components/Contact";
 
 function App() {
-	const profInfo = {
-		id: "profile__img",
-		url: "profile.png",
-		btnText: "Annette Black",
-	};
 	return (
-		<>
-			<div className="App">
-				<Profile profInfo={profInfo} />
-				{btnData.map((data) => (
-					<AnchorBtn btnInfo={data} />
-				))}
-				<SocialSection />
-			</div>
-			<Footer />
-		</>
+		<Routes>
+			<Route path="/" element={<Home />} />
+			<Route path="/contact" element={<Contact />} />
+			<Route />
+		</Routes>
 	);
 }
 
