@@ -10,6 +10,7 @@ const Contact = () => {
 	});
 
 	const [formChecked, setFormChecked] = useState(false);
+	// const isCheckboxFocussed = document.getElementById("checkbox").autofocus();
 
 	const name = "Fatuma A";
 
@@ -30,9 +31,8 @@ const Contact = () => {
 			...formVals,
 			formChecked,
 		};
-		alert(JSON.stringify(formInfo));
+		console.log("Form info:", formInfo);
 		alert("Message sent");
-		setFormChecked(false);
 		e.target.reset();
 	};
 
@@ -102,7 +102,17 @@ const Contact = () => {
 						<div className="hint">
 							{formVals.message.length < 1 ? "Please enter a message" : ""}
 						</div>
-						<div>
+						<div
+							onMouseEnter={() => {
+								document.getElementById("id").classList.add("hint2");
+								document.getElementById("id").innerHTML =
+									"Please check the checkbox";
+							}}
+							onMouseLeave={() => {
+								document.getElementById("id").classList.remove("hint2");
+								document.getElementById("id").innerHTML = "";
+							}}
+						>
 							<input
 								required
 								name="checkbox"
@@ -114,6 +124,7 @@ const Contact = () => {
 								You agree to providing your data to {name} who may contact you.
 							</label>
 						</div>
+						<div id="id"></div>
 						<button type="submit" id="btn__submit">
 							Send message
 						</button>
