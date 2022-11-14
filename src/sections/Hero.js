@@ -12,7 +12,7 @@ import ButtonWrapper from "../components/ButtonWrapper";
 
 const Hero = () => {
 	return (
-		<HStack spacing={24} mt="20" mb="30">
+		<HStack spacing={32} mt="20" mb="30">
 			<VStack spacing={8} w="50%">
 				<Text fontSize="5xl" fontWeight="bold">
 					Rent a place away from home in the metaverse

@@ -1,4 +1,5 @@
 import React from "react";
+import { Container } from "@chakra-ui/react";
 import MetaBnbInfo from "../sections/MetaBnbInfo";
 import Hero from "../sections/Hero";
 import SocialProof from "../sections/SocialProof";
@@ -8,14 +9,19 @@ import Footer from "../components/Footer";
 
 const Home = () => {
 	return (
-		<div>
-			<Navbar />
-			<Hero />
-			<SocialProof />
-			<NFTs />
-			<MetaBnbInfo />
-			<Footer />
-		</div>
+		<>
+			<Container maxWidth="1300px" centerContent>
+				<Navbar />
+				<Hero />
+			</Container>
+			<div style={{ width: "100%" }}>
+				<SocialProof />
+
+				<NFTs />
+				<MetaBnbInfo />
+				<Footer />
+			</div>
+		</>
 	);
 };
 

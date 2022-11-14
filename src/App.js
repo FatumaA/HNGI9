@@ -6,12 +6,10 @@ import { Center, Container } from "@chakra-ui/react";
 
 function App() {
 	return (
-		<Container maxW="container.xl" centerContent>
-			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/nft-places" element={<NFTPlaces />} />
-			</Routes>
-		</Container>
+		<Routes>
+			<Route path="/" element={<Home />} />
+			<Route path="/nft-places" element={<NFTPlaces />} />
+		</Routes>
 	);
 }
 

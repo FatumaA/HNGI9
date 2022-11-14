@@ -1,4 +1,4 @@
-import { HStack, Text, Image } from "@chakra-ui/react";
+import { HStack, Text, Image, Container } from "@chakra-ui/react";
 import React from "react";
 
 const SocialProof = () => {
@@ -6,7 +6,7 @@ const SocialProof = () => {
 		<HStack
 			p="4"
 			align="stretch"
-			justify="space-between"
+			justify="space-around"
 			backgroundColor="#A02279"
 		>
 			<HStack>

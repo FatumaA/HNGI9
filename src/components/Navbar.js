@@ -5,11 +5,10 @@ import ButtonWrapper from "./ButtonWrapper";
 
 const Navbar = () => {
 	return (
-		<nav>
-			<HStack spacing={32} mt="4" mb="4">
+		<nav style={{ width: "100%" }}>
+			<HStack mt="4" mb="2" justifyContent="space-between">
 				<div>
 					<Image
-						// boxSize="100px"
 						src={require("../images/logo-colored.png")}
 						alt="MetaBnB logo"
 					/>
