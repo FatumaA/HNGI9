@@ -1,7 +1,8 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 
 const NFTPlaces = () => {
-	return <div>NFTPlaces</div>;
+	return <Navbar />;
 };
 
 export default NFTPlaces;
