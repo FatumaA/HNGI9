@@ -12,12 +12,12 @@ import ButtonWrapper from "../components/ButtonWrapper";
 
 const Hero = () => {
 	return (
-		<HStack spacing={32} mt="20" mb="30">
+		<HStack spacing={32} mt="10" mb="100">
 			<VStack spacing={8} w="50%">
 				<Text fontSize="5xl" fontWeight="bold">
-					Rent a place away from home in the metaverse
+					Rent a Place away from Home in the Metaverse
 				</Text>
-				<Text fontSize="2xl">
+				<Text fontSize="2xl" fontWeight="400">
 					We provide you access to luxury and affordable houses in the
 					metaverse, get a chance to turn your imagination to reality at your
 					comfort zone

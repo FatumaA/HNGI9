@@ -10,13 +10,12 @@ import Footer from "../components/Footer";
 const Home = () => {
 	return (
 		<>
-			<Container maxWidth="1300px" centerContent>
+			<Container maxWidth="1200px" centerContent>
 				<Navbar />
 				<Hero />
 			</Container>
 			<div style={{ width: "100%" }}>
 				<SocialProof />
-
 				<NFTs />
 				<MetaBnbInfo />
 				<Footer />
