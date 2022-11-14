@@ -31,10 +31,15 @@ const Card = ({ pics }) => {
 	];
 	return (
 		<Container maxWidth="1200px">
-			<Grid templateColumns="repeat(4, 1fr)" gap={8}>
+			<Grid templateColumns="repeat(4, 1fr)" gap={6}>
 				{p.map((x) => (
 					<>
-						<VStack alignItems="start">
+						<VStack
+							alignItems="start"
+							p="10px"
+							border="1px solid #D7D7D7"
+							borderRadius="10px"
+						>
 							<Image src={x} alt={x} />
 							<HStack>
 								<Text>Desert King</Text>
