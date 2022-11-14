@@ -6,7 +6,7 @@ import ButtonWrapper from "./ButtonWrapper";
 const Navbar = () => {
 	return (
 		<nav>
-			<HStack spacing={32}>
+			<HStack spacing={32} mt="4" mb="4">
 				<div>
 					<Image
 						// boxSize="100px"
