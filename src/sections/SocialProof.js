@@ -11,19 +11,24 @@ const SocialProof = () => {
 		>
 			<HStack>
 				<Image src={require("../images/mbtoken.png")} alt="mbtoken logo" />
-				<Text color="white" fontWeight="bold">
+				<Text color="white" fontSize="32px" fontWeight="700">
 					MBToken
 				</Text>
 			</HStack>
 			<HStack>
 				<Image src={require("../images/metamask.png")} alt="metamask logo" />
-				<Text color="white" fontWeight="bold">
+				<Text
+					color="white"
+					fontSize="32px"
+					fontWeight="300"
+					letterSpacing="widest"
+				>
 					METAMASK
 				</Text>
 			</HStack>
 			<HStack>
 				<Image src={require("../images/opensea.png")} alt="opensea logo" />
-				<Text color="white" fontWeight="bold">
+				<Text color="white" fontSize="32px" fontWeight="700">
 					OpenSea
 				</Text>
 			</HStack>
