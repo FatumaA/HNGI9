@@ -17,8 +17,12 @@ const Home = () => {
 			<div style={{ width: "100%" }}>
 				<SocialProof />
 				<NFTs />
-				<MetaBnbInfo />
-				<Footer />
+				<div style={{ backgroundColor: "#A02279" }}>
+					<MetaBnbInfo />
+				</div>
+				<div style={{ backgroundColor: "black" }}>
+					<Footer />
+				</div>
 			</div>
 		</>
 	);
