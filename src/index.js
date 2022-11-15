@@ -11,6 +11,9 @@ const theme = extendTheme({
 		heading: `'Red Rose', cursive`,
 		body: `'Red Rose', cursive`,
 	},
+	breakpoints: {
+		sm: "400px",
+	},
 });
 
 root.render(
