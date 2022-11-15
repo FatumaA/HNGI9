@@ -5,9 +5,9 @@ import {
 	InputGroup,
 	Text,
 	Input,
-	InputRightElement,
 	Image,
 	InputRightAddon,
+	Spacer,
 } from "@chakra-ui/react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -16,9 +16,15 @@ import Card from "../components/Card";
 const NFTPlaces = () => {
 	return (
 		<>
-			<Container maxWidth="1200px" mb="20">
+			<Container maxWidth="1200px">
 				<Navbar />
-				<HStack spacing={4} mt="20" mb="10" justifyContent="space-between">
+				<HStack
+					spacing={4}
+					mt="10"
+					mb="10"
+					pt="32"
+					justifyContent="space-between"
+				>
 					<Text>Restaurant</Text>
 					<Text>Cottage</Text>
 					<Text>Castle</Text>
@@ -33,7 +39,7 @@ const NFTPlaces = () => {
 							bgColor="transparent"
 							children={
 								<Image
-									src={require("../images/filter-icon.png")}
+									src={require("../images/correct-filter-icon.png")}
 									alt="filter icon"
 								/>
 							}

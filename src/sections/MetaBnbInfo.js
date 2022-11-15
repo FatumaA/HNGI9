@@ -4,7 +4,7 @@ import ButtonWrapper from "../components/ButtonWrapper";
 
 const MetaBnbInfo = () => {
 	return (
-		<Container maxWidth="1200px">
+		<Container maxWidth="1200px" pt="20" pb="20">
 			<HStack spacing={32}>
 				<VStack spacing={8} align="start">
 					<Text fontSize="4xl" color="white" fontWeight="bold">
@@ -17,26 +17,12 @@ const MetaBnbInfo = () => {
 					</Text>
 					<ButtonWrapper title="Metabnb NFTs"></ButtonWrapper>
 				</VStack>
-				<VStack maxHeight="600px">
+				<VStack maxHeight="800px">
 					<Image
-						maxHeight="200px"
-						src={require("../images/nftpurple.png")}
-						alt="nft home 1"
-						mt="100px"
-					/>
-					<Image
-						maxHeight="200px"
-						src={require("../images/nftgreen.png")}
-						mb="-100px"
-						alt="nft home 1"
-						// style={{ zIndex: 1 }}
-					/>
-					<Image
-						maxHeight="200px"
-						src={require("../images/nftorange.png")}
-						alt="nft home 1"
-						// ml="2000px"
-						// style={{ zIndex: 2 }}
+						maxHeight="600px"
+						src={require("../images/three-images.png")}
+						alt="nft home"
+						mr="2"
 					/>
 				</VStack>
 			</HStack>

@@ -9,22 +9,20 @@ import Footer from "../components/Footer";
 
 const Home = () => {
 	return (
-		<>
-			<Container maxWidth="1200px" centerContent>
+		<div style={{ width: "100%" }}>
+			<Container maxWidth="1200px">
 				<Navbar />
-				<Hero />
 			</Container>
-			<div style={{ width: "100%" }}>
-				<SocialProof />
-				<NFTs />
-				<div style={{ backgroundColor: "#A02279" }}>
-					<MetaBnbInfo />
-				</div>
-				<div style={{ backgroundColor: "black" }}>
-					<Footer />
-				</div>
+			<Hero />
+			<SocialProof />
+			<NFTs />
+			<div style={{ backgroundColor: "#A02279" }}>
+				<MetaBnbInfo />
 			</div>
-		</>
+			<div style={{ backgroundColor: "black" }}>
+				<Footer />
+			</div>
+		</div>
 	);
 };
 
