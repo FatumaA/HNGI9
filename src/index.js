@@ -3,13 +3,21 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+const theme = extendTheme({
+	colors: {
+		primary: {
+			pink: "#A02279",
+		},
+	},
+	fonts: {},
+});
 root.render(
 	<React.StrictMode>
 		<BrowserRouter>
-			<ChakraProvider>
+			<ChakraProvider theme={theme}>
 				<App />
 			</ChakraProvider>
 		</BrowserRouter>
