@@ -14,7 +14,12 @@ const Footer = () => {
 		<Container maxWidth="1200px" color="white" pt="20" pb="10">
 			<Grid templateColumns="repeat(4, 1fr)" gap={24}>
 				<VStack align="start" mr="2.5">
-					<Image src={require("../images/logo-white.png")} mb="20" />
+					<Image
+						maxHeight="8"
+						src={require("../images/logo-white.png")}
+						onClick={() => (window.location.href = "/")}
+						mb="20"
+					/>
 					<HStack spacing={10}>
 						<Image src={require("../images/fb-icon.png")} />
 						<Image src={require("../images/insta-icon.png")} />

@@ -17,6 +17,7 @@ const Navbar = () => {
 		<Container position="fixed" maxWidth="1200px" w="100%">
 			<HStack justifyContent="space-between">
 				<Image
+					maxHeight="8"
 					ml="-23px"
 					onClick={() => (window.location.href = "/")}
 					src={require("../images/logo-colored.png")}
