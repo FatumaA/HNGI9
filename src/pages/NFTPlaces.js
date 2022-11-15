@@ -7,7 +7,7 @@ import {
 	Input,
 	Image,
 	InputRightAddon,
-	Spacer,
+	Stack,
 } from "@chakra-ui/react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -18,10 +18,10 @@ const NFTPlaces = () => {
 		<>
 			<Container maxWidth="1200px">
 				<Navbar />
-				<HStack
-					spacing={4}
-					mt="10"
-					mb="10"
+				<Stack
+					direction={["column", "row"]}
+					spacing={["2", "4"]}
+					my="10"
 					pt="32"
 					justifyContent="space-between"
 				>
@@ -45,7 +45,7 @@ const NFTPlaces = () => {
 							}
 						/>
 					</InputGroup>
-				</HStack>
+				</Stack>
 				<Card isHomePage={false} />
 			</Container>
 			<div style={{ backgroundColor: "black" }}>
