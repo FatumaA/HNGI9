@@ -1,25 +1,39 @@
-import { HStack, Text, Image, Container } from "@chakra-ui/react";
+import { HStack, Text, Image, Stack } from "@chakra-ui/react";
 import React from "react";
 
 const SocialProof = () => {
 	return (
-		<HStack
-			p="4"
+		<Stack
+			direction="row"
+			p={["2", "4"]}
 			align="stretch"
-			justify="space-around"
+			justify={["space-evenly", "space-around"]}
 			backgroundColor="#A02279"
 		>
 			<HStack>
-				<Image src={require("../images/mbtoken.png")} alt="mbtoken logo" />
-				<Text color="white" fontSize="32px" fontWeight="700">
+				<Image
+					maxHeight={["20px", "40px"]}
+					src={require("../images/mbtoken.png")}
+					alt="mbtoken logo"
+				/>
+
+				<Text
+					color="white"
+					fontSize={["18px", "24px", "32px"]}
+					fontWeight="700"
+				>
 					MBToken
 				</Text>
 			</HStack>
 			<HStack>
-				<Image src={require("../images/metamask.png")} alt="metamask logo" />
+				<Image
+					maxHeight={["20px", "40px"]}
+					src={require("../images/metamask.png")}
+					alt="metamask logo"
+				/>
 				<Text
 					color="white"
-					fontSize="32px"
+					fontSize={["18px", "24px", "32px"]}
 					fontWeight="300"
 					letterSpacing="widest"
 				>
@@ -27,12 +41,20 @@ const SocialProof = () => {
 				</Text>
 			</HStack>
 			<HStack>
-				<Image src={require("../images/opensea.png")} alt="opensea logo" />
-				<Text color="white" fontSize="32px" fontWeight="700">
+				<Image
+					maxHeight={["20px", "40px"]}
+					src={require("../images/opensea.png")}
+					alt="opensea logo"
+				/>
+				<Text
+					color="white"
+					fontSize={["18px", "24px", "32px"]}
+					fontWeight="700"
+				>
 					OpenSea
 				</Text>
 			</HStack>
-		</HStack>
+		</Stack>
 	);
 };
 
