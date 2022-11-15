@@ -13,7 +13,8 @@ const ButtonWrapper = ({
 			onClick={onClick}
 			w={width}
 			fontWeight="400"
-			colorScheme={isPrimary ? "pink" : "white"}
+			backgroundColor={isPrimary ? "pink.700" : "white"}
+			color={isPrimary ? "white" : "pink.700"}
 		>
 			{title}
 		</Button>
