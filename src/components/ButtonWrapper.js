@@ -7,7 +7,6 @@ const ButtonWrapper = ({
 	width = "200px",
 	onClick,
 }) => {
-	console.log(onClick);
 	return (
 		<Button
 			onClick={onClick}
