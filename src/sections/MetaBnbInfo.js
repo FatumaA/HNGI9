@@ -15,7 +15,7 @@ const MetaBnbInfo = () => {
 						gift cards which are traded as NFTs. These NFTs gives our cutomer
 						access to loads of our exclusive services.
 					</Text>
-					<ButtonWrapper title="Metabnb NFTs"></ButtonWrapper>
+					<ButtonWrapper title="Metabnb NFTs" isPrimary={false}></ButtonWrapper>
 				</VStack>
 				<VStack maxHeight="800px">
 					<Image

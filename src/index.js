@@ -7,13 +7,12 @@ import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const theme = extendTheme({
-	colors: {
-		primary: {
-			pink: "#A02279",
-		},
+	fonts: {
+		heading: `'Red Rose', cursive`,
+		body: `'Red Rose', cursive`,
 	},
-	fonts: {},
 });
+
 root.render(
 	<React.StrictMode>
 		<BrowserRouter>

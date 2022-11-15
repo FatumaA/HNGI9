@@ -34,7 +34,7 @@ const NFTPlaces = () => {
 					<Text>Off-grid</Text>
 					<Text>Farm</Text>
 					<InputGroup w="auto">
-						<Input placeholder="Location" />
+						<Input type="text" placeholder="Location" />
 						<InputRightAddon
 							bgColor="transparent"
 							children={
