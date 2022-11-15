@@ -1,16 +1,31 @@
 import React from "react";
-import { HStack, VStack, Image, Text, Container } from "@chakra-ui/react";
+import {
+	HStack,
+	VStack,
+	Image,
+	Text,
+	Container,
+	Stack,
+} from "@chakra-ui/react";
 import ButtonWrapper from "../components/ButtonWrapper";
 
 const MetaBnbInfo = () => {
 	return (
-		<Container maxWidth="1200px" pt="20" pb="20">
-			<HStack spacing={32}>
+		<Container maxWidth="1200px" py="10">
+			<Stack
+				direction={["column", "row"]}
+				spacing={["4", "14", "32"]}
+				mx={["4", "6", "0"]}
+			>
 				<VStack spacing={8} align="start">
-					<Text fontSize="4xl" color="white" fontWeight="bold">
+					<Text fontSize={["2xl", "3xl"]} color="white" fontWeight="bold">
 						Metabnb NFTs
 					</Text>
-					<Text color="white" lineHeight="8" maxWidth="350px">
+					<Text
+						color="white"
+						lineHeight="8"
+						maxWidth={["fit-content ", "350px"]}
+					>
 						Discover our NFT gift cards collection. Loyal customers gets amazing
 						gift cards which are traded as NFTs. These NFTs gives our cutomer
 						access to loads of our exclusive services.
@@ -25,7 +40,7 @@ const MetaBnbInfo = () => {
 						mr="2"
 					/>
 				</VStack>
-			</HStack>
+			</Stack>
 		</Container>
 	);
 };
