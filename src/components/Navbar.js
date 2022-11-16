@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, HStack, Image, useDisclosure } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import ButtonWrapper from "./ButtonWrapper";
-import ModalWrapper from "./ModalWrapper";
+import { ButtonWrapper } from "./ButtonWrapper";
+import { ModalWrapper } from "./ModalWrapper";
 
 export const Navbar = () => {
 	const { isOpen, onClose, onOpen } = useDisclosure();

@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { useDisclosure, Flex, Button, VStack, Image } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import MobNavbar from "./MobNavbar";
-import ButtonWrapper from "./ButtonWrapper";
-import ModalWrapper from "./ModalWrapper";
+import { ButtonWrapper } from "./ButtonWrapper";
+import { ModalWrapper } from "./ModalWrapper";
 
 export const MobileMenu = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
