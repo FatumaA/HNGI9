@@ -12,15 +12,14 @@ import {
 } from "@chakra-ui/react";
 
 const MobNavbar = ({
-	p = 15,
+	p = 10,
 	placement = "right",
 	width,
 	isOpen,
 	children,
 	onClose,
 	btnRef,
-	title = "Menu",
-	footer,
+	title = "Navigation",
 }) => {
 	return (
 		<Flex w={width}>
@@ -31,13 +30,12 @@ const MobNavbar = ({
 				finalFocusRef={btnRef}
 			>
 				<DrawerOverlay />
-				<DrawerContent alignItems="center">
+				<DrawerContent alignItems="start">
 					<DrawerCloseButton alignSelf="end" mx={p} my={p} />
 					<DrawerHeader my={p}>
-						<Text as="p"> {title} </Text>
+						<Text> {title} </Text>
 					</DrawerHeader>
 					<DrawerBody>{children}</DrawerBody>
-					<DrawerFooter>{footer}</DrawerFooter>
 				</DrawerContent>
 			</Drawer>
 		</Flex>

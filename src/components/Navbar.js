@@ -7,13 +7,11 @@ import ModalWrapper from "./ModalWrapper";
 const Navbar = () => {
 	const { isOpen, onClose, onOpen } = useDisclosure();
 	return (
-		<Container
-			position="fixed"
-			maxWidth="1200px"
-			w="100%"
-			display={{ base: "none", md: "flex" }}
-		>
-			<HStack justifyContent="space-between">
+		<Container position="fixed" maxWidth="1200px" w="100%">
+			<HStack
+				justifyContent="space-between"
+				display={{ base: "none", md: "flex" }}
+			>
 				<Image
 					maxHeight="8"
 					ml="-23px"
