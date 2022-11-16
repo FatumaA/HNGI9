@@ -1,12 +1,5 @@
 import React from "react";
-import {
-	Box,
-	Container,
-	HStack,
-	Image,
-	position,
-	useDisclosure,
-} from "@chakra-ui/react";
+import { Container, HStack, Image, useDisclosure } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import ButtonWrapper from "./ButtonWrapper";
 import ModalWrapper from "./ModalWrapper";
@@ -14,7 +7,12 @@ import ModalWrapper from "./ModalWrapper";
 const Navbar = () => {
 	const { isOpen, onClose, onOpen } = useDisclosure();
 	return (
-		<Container position="fixed" maxWidth="1200px" w="100%">
+		<Container
+			position="fixed"
+			maxWidth="1200px"
+			w="100%"
+			display={{ base: "none", md: "flex" }}
+		>
 			<HStack justifyContent="space-between">
 				<Image
 					maxHeight="8"
