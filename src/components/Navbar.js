@@ -10,7 +10,7 @@ const Navbar = () => {
 		<Container position="fixed" maxWidth="1200px" w="100%">
 			<HStack
 				justifyContent="space-between"
-				display={{ base: "none", md: "flex" }}
+				display={{ base: "none", lg: "flex" }}
 			>
 				<Image
 					maxHeight="8"

@@ -19,7 +19,7 @@ const MobileMenu = () => {
 		<Flex
 			position="fixed"
 			w="100%"
-			display={{ base: "flex", md: "none" }}
+			display={{ base: "flex", lg: "none" }}
 			justifyContent="space-around"
 		>
 			<Image
