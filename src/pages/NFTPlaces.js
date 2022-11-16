@@ -12,12 +12,14 @@ import {
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
+import MobileMenu from "../components/MobileMenu";
 
 const NFTPlaces = () => {
 	return (
 		<>
 			<Container maxWidth="1200px">
 				<Navbar />
+				<MobileMenu />
 				<Stack
 					direction={["column", "row"]}
 					spacing={["2", "4"]}

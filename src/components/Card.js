@@ -7,8 +7,10 @@ import {
 	Grid,
 	HStack,
 	Container,
+	Flex,
 	SimpleGrid,
 	GridItem,
+	AspectRatio,
 } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
 import homepic1 from "../images/homepic1.png";
@@ -60,9 +62,6 @@ const Card = ({ isHomePage = true }) => {
 	return isHomePage ? (
 		<Container maxWidth="1200px">
 			<Grid
-				// columns={["1", "2", "4"]}
-				// width="100%"
-				// height="auto"
 				templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(4, 1fr)"]}
 				gap={6}
 			>
@@ -76,6 +75,8 @@ const Card = ({ isHomePage = true }) => {
 							borderRadius="10px"
 						>
 							<Image
+								objectFit="cover"
+								borderRadius="10px"
 								maxHeight={["150px", "220px", "250px"]}
 								key={i}
 								src={x}
@@ -106,22 +107,20 @@ const Card = ({ isHomePage = true }) => {
 			<Grid
 				templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(4, 1fr)"]}
 				gap={6}
+				mb="20"
 			>
 				{nftpics.map((np, i) => (
 					<>
-						<Stack
-							w="fit-content"
-							alignItems="start"
-							p="10px"
-							border="1px solid #D7D7D7"
-							borderRadius="10px"
-						>
+						<Stack p="10px" border="1px solid #D7D7D7" borderRadius="10px">
 							<Image
+								objectFit="cover"
+								borderRadius="10px"
 								maxHeight={["150px", "220px", "250px"]}
 								key={i}
 								src={np}
 								alt={np}
 							/>
+
 							<Stack direction={["column", "row"]}>
 								<Text>Desert King</Text>
 								<Text fontWeight="bold">1MBT per night</Text>
