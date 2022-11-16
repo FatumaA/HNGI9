@@ -4,7 +4,7 @@ import { Button } from "@chakra-ui/react";
 const ButtonWrapper = ({
 	title,
 	isPrimary = true,
-	width = "200px",
+	width = ["fit-content", "200px"],
 	onClick,
 }) => {
 	return (
