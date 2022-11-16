@@ -8,7 +8,6 @@ import {
 	InputGroup,
 	InputRightElement,
 	Container,
-	Box,
 	Stack,
 } from "@chakra-ui/react";
 import ButtonWrapper from "../components/ButtonWrapper";

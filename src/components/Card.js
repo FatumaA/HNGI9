@@ -1,17 +1,5 @@
 import React from "react";
-import {
-	Stack,
-	VStack,
-	Image,
-	Text,
-	Grid,
-	HStack,
-	Container,
-	Flex,
-	SimpleGrid,
-	GridItem,
-	AspectRatio,
-} from "@chakra-ui/react";
+import { Stack, Image, Text, Grid, HStack, Container } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
 import homepic1 from "../images/homepic1.png";
 import homepic2 from "../images/homepic2.png";

@@ -1,12 +1,5 @@
 import React from "react";
-import {
-	HStack,
-	VStack,
-	Image,
-	Text,
-	Container,
-	Stack,
-} from "@chakra-ui/react";
+import { VStack, Image, Text, Container, Stack } from "@chakra-ui/react";
 import ButtonWrapper from "../components/ButtonWrapper";
 
 const MetaBnbInfo = () => {

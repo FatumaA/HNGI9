@@ -13,7 +13,7 @@ import {
 	Image,
 	Spacer,
 } from "@chakra-ui/react";
-import { ArrowRightIcon, ChevronRightIcon } from "@chakra-ui/icons";
+import { ChevronRightIcon } from "@chakra-ui/icons";
 
 const ModalWrapper = ({ Open, Close }) => {
 	return (
