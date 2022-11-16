@@ -48,13 +48,7 @@ export const Card = ({ isHomePage = true }) => {
 			>
 				{p.map((x, i) => (
 					<>
-						<Stack
-							w="fit-content"
-							alignItems="start"
-							p="10px"
-							border="1px solid #D7D7D7"
-							borderRadius="10px"
-						>
+						<Stack p="10px" border="1px solid #D7D7D7" borderRadius="10px">
 							<Image
 								objectFit="cover"
 								borderRadius="10px"
