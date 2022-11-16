@@ -19,7 +19,7 @@ export const SocialProof = () => {
 
 				<Text
 					color="white"
-					fontSize={["18px", "24px", "32px"]}
+					fontSize={["12px", "24px", "32px"]}
 					fontWeight="700"
 				>
 					MBToken
@@ -33,7 +33,7 @@ export const SocialProof = () => {
 				/>
 				<Text
 					color="white"
-					fontSize={["18px", "24px", "32px"]}
+					fontSize={["12px", "24px", "32px"]}
 					fontWeight="300"
 					letterSpacing="widest"
 				>
@@ -48,7 +48,7 @@ export const SocialProof = () => {
 				/>
 				<Text
 					color="white"
-					fontSize={["18px", "24px", "32px"]}
+					fontSize={["12px", "24px", "32px"]}
 					fontWeight="700"
 				>
 					OpenSea
