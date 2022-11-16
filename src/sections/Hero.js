@@ -45,7 +45,7 @@ export const Hero = () => {
 					</Text>
 					<HStack w="100%">
 						<InputGroup>
-							<Input type="text" />
+							<Input type="text" placeholder="Search for location" />
 							<InputRightElement
 								w="auto"
 								children={<ButtonWrapper title="Search" />}
