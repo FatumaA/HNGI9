@@ -8,10 +8,7 @@ import {
 	InputRightAddon,
 	Stack,
 } from "@chakra-ui/react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Card from "../components/Card";
-import MobileMenu from "../components/MobileMenu";
+import { Navbar, Footer, Card, MobileMenu } from "../components/index";
 
 const NFTPlaces = () => {
 	return (

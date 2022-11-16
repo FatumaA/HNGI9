@@ -10,9 +10,9 @@ import {
 	Container,
 	Stack,
 } from "@chakra-ui/react";
-import ButtonWrapper from "../components/ButtonWrapper";
+import { ButtonWrapper } from "../components/index";
 
-const Hero = () => {
+export const Hero = () => {
 	return (
 		<Container maxWidth="1200px">
 			<Stack
@@ -67,5 +67,3 @@ const Hero = () => {
 		</Container>
 	);
 };
-
-export default Hero;

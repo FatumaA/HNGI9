@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 
-const ModalWrapper = ({ Open, Close }) => {
+export const ModalWrapper = ({ Open, Close }) => {
 	return (
 		<Modal isOpen={Open} onClose={Close}>
 			<ModalOverlay />
@@ -66,5 +66,3 @@ const ModalWrapper = ({ Open, Close }) => {
 		</Modal>
 	);
 };
-
-export default ModalWrapper;

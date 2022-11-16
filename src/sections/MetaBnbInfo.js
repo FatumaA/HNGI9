@@ -1,8 +1,8 @@
 import React from "react";
 import { VStack, Image, Text, Container, Stack } from "@chakra-ui/react";
-import ButtonWrapper from "../components/ButtonWrapper";
+import { ButtonWrapper } from "../components/index";
 
-const MetaBnbInfo = () => {
+export const MetaBnbInfo = () => {
 	return (
 		<Container maxWidth="1200px" py="10">
 			<Stack
@@ -37,5 +37,3 @@ const MetaBnbInfo = () => {
 		</Container>
 	);
 };
-
-export default MetaBnbInfo;

@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@chakra-ui/react";
 
-const ButtonWrapper = ({
+export const ButtonWrapper = ({
 	title,
 	isPrimary = true,
 	width = ["fit-content", "200px"],
@@ -19,5 +19,3 @@ const ButtonWrapper = ({
 		</Button>
 	);
 };
-
-export default ButtonWrapper;

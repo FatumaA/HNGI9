@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import ButtonWrapper from "./ButtonWrapper";
 import ModalWrapper from "./ModalWrapper";
 
-const Navbar = () => {
+export const Navbar = () => {
 	const { isOpen, onClose, onOpen } = useDisclosure();
 	return (
 		<Container position="fixed" maxWidth="1200px" w="100%">
@@ -31,5 +31,3 @@ const Navbar = () => {
 		</Container>
 	);
 };
-
-export default Navbar;

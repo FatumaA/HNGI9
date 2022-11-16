@@ -1,7 +1,7 @@
-import { HStack, Text, Image, Stack } from "@chakra-ui/react";
 import React from "react";
+import { HStack, Text, Image, Stack } from "@chakra-ui/react";
 
-const SocialProof = () => {
+export const SocialProof = () => {
 	return (
 		<Stack
 			direction="row"
@@ -57,5 +57,3 @@ const SocialProof = () => {
 		</Stack>
 	);
 };
-
-export default SocialProof;

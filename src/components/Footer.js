@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, VStack, Image, Grid, Text, HStack } from "@chakra-ui/react";
 
-const Footer = () => {
+export const Footer = () => {
 	return (
 		<Container maxWidth="1200px" color="white" pt="20" pb="10">
 			<Grid
@@ -56,5 +56,3 @@ const Footer = () => {
 		</Container>
 	);
 };
-
-export default Footer;

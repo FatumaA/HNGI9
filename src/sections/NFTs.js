@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Text } from "@chakra-ui/react";
-import Card from "../components/Card";
+import { Card } from "../components/index";
 
-const NFTs = () => {
+export const NFTs = () => {
 	return (
 		<Container maxWidth="1200px" mb="20" id="nfts">
 			<Text
@@ -14,10 +14,7 @@ const NFTs = () => {
 			>
 				Inspiration for your next adventure
 			</Text>
-			{/* Insert cards here */}
 			<Card />
 		</Container>
 	);
 };
-
-export default NFTs;

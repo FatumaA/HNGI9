@@ -18,7 +18,7 @@ import nftpg14 from "../images/nftpg14.png";
 import nftpg15 from "../images/nftpg15.png";
 import nftpg16 from "../images/nftpg16.png";
 
-const Card = ({ isHomePage = true }) => {
+export const Card = ({ isHomePage = true }) => {
 	const p = [
 		homepic1,
 		homepic2,
@@ -30,14 +30,7 @@ const Card = ({ isHomePage = true }) => {
 		homepic8,
 	];
 	const nftpics = [
-		homepic1,
-		homepic2,
-		homepic3,
-		homepic4,
-		homepic5,
-		homepic6,
-		homepic7,
-		homepic8,
+		...p,
 		nftpg9,
 		nftpg10,
 		nftpg11,
@@ -131,5 +124,3 @@ const Card = ({ isHomePage = true }) => {
 		</Container>
 	);
 };
-
-export default Card;

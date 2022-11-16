@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useDisclosure, Flex, Button, VStack, Image } from "@chakra-ui/react";
+import { HamburgerIcon } from "@chakra-ui/icons";
 import MobNavbar from "./MobNavbar";
 import ButtonWrapper from "./ButtonWrapper";
 import ModalWrapper from "./ModalWrapper";
-import { HamburgerIcon } from "@chakra-ui/icons";
 
-const MobileMenu = () => {
+export const MobileMenu = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	const {
 		isOpen: isOpenMenu,
@@ -36,7 +36,6 @@ const MobileMenu = () => {
 				<HamburgerIcon size="18px" />
 			</Button>
 
-			{/* Drawer Component */}
 			<MobNavbar
 				isOpen={isOpenMenu}
 				onClose={onCloseMenu}
@@ -52,4 +51,3 @@ const MobileMenu = () => {
 		</Flex>
 	);
 };
-export default MobileMenu;
