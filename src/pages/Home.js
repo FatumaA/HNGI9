@@ -6,12 +6,14 @@ import SocialProof from "../sections/SocialProof";
 import NFTs from "../sections/NFTs";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import MobileMenu from "../components/MobileMenu";
 
 const Home = () => {
 	return (
 		<div style={{ width: "100%" }}>
 			<Container maxWidth="1200px">
 				<Navbar />
+				<MobileMenu />
 			</Container>
 			<Hero />
 			<SocialProof />
